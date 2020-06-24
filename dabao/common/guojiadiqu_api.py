@@ -11,7 +11,7 @@ class Guojiadiqu_api():
 
     # 返回国家数据
     def Country(self):
-        url = "http://192.168.14.228:1337/api/v1/cities/%2f/0"
+        url = "XXX"
         r = requests.get(url)
         res = r.json()['cities'][0] # 提取keys信息
         zhi = {'id','cityCode','name'}  # 提取需要的返回值
@@ -20,7 +20,7 @@ class Guojiadiqu_api():
 
     # 返回省市数据
     def city(self):
-        url1 = "http://192.168.14.228:1337/api/v1/cities/%2f/1"
+        url1 = "XXX"
         r1 = requests.get(url1)
         res1 = r1.json()['cities'][0] # 提取keys信息
         zhi1 = {'id','cityCode','name'}  # 提取需要的返回值
@@ -29,7 +29,7 @@ class Guojiadiqu_api():
 
     # 返回县/区数据
     def area(self):
-        url1 = "http://192.168.14.228:1337/api/v1/cities/%2f/1"
+        url1 = "XXX"
         r1 = requests.get(url1)
         res2 = r1.json()['cities'][0] # 提取keys信息
         zhi2 = {'id','cityCode','name'}  # 提取需要的返回值
