@@ -7,7 +7,7 @@ from common import captchaCode_api
 
 class TestCase(unittest.TestCase):
     def setUp(self):  # 定义一个全局变量，这里是定义注册地址变量
-        self.url = "http://192.168.14.228:1337/api/v1/auth/register"
+        self.url = "xxx"
         self.s = requests.session()
         self.e = guojiadiqu_api.Guojiadiqu_api() # 国家地区类的实例化
         self.Country = self.e.Country() # 获取国家地区信息
