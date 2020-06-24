@@ -5,7 +5,7 @@ import unittest
 class TestCase(unittest.TestCase):
     # 定义公用的请求方法
     def setUp(self):
-        self.url = "http://192.168.14.228:1337/api/v1/auth/login"
+        self.url = "XXX"
         self.s = requests.session()
 
     @classmethod
