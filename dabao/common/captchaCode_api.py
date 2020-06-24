@@ -9,7 +9,7 @@ class CaptchaCode():
     # 发送短信验证码
     def fasongyanzhengma(self,phoneNo):  #　初始化发送验证码
         self.phoneNo = phoneNo  # 定义全局参数
-        url = "http://192.168.14.228:1337/api/v1/auth/sendCode"
+        url = "http://ip:端口/api/v1/auth/sendCode"
         par = {
             "nationCode":"+86",
             "phoneNo":phoneNo
@@ -23,7 +23,7 @@ class CaptchaCode():
 
     # 接收验证码
     def jieshouyanzhengma(self):
-        r1 = requests.get("http://192.168.14.228:19000/")
+        r1 = requests.get("ip")
         result = r1.content.decode('utf-8')
         # 下面正则提取接受的验证码第一个
         res = re.findall('手机号:<span class="phoneNo">(\d+)</span> 在<span class="createdAt">(.*)</span>申请的验证码:<b><span class="code">(\d+)</span></b>',result)
